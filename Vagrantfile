@@ -1,11 +1,11 @@
-Vagrant::Config.run do |config|
+Vagrant.configure("1") do |config|
   # All Vagrant configuration is done here. For a detailed explanation
   # and listing of configuration options, please view the documentation
   # online.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "precise32"
-  config.vm.box_url = "http://files.vagrantup.com/precise32.box"
+  config.vm.box = "precise64"
+  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
   # config.vm.boot_mode = :gui
 
   # Memory setting for Vagrant < 0.90
@@ -26,7 +26,7 @@ Vagrant::Config.run do |config|
 
   # Try to use NFS only on platforms other than Windows
   nfs = !Kernel.is_windows?
-  config.vm.share_folder("v-root", "/vagrant", ".", :nfs => nfs)
+  config.vm.share_folder("vagrant-root", "/vagrant", ".", :nfs => nfs)
 
   config.vm.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
 
