@@ -15,7 +15,7 @@ VirtualBox Vagrant Chef Drupal install
 6. Drink a big kombucha while you listen to a Diamond Rings EP on vinyl, because clearly you're a giant hipster.
 
 
-That's it, files in "public" are served here : [http://dev-site.local/](http://dev-site.local/), and if you have a new MySQL database and drop a copy of Drupal into the public directory, you'll be ready to go.
+That's it, files in "public" are served here : [http://dev-site.vm/](http://dev-site.vm/), and if you have a new MySQL database and drop a copy of Drupal into the public directory, you'll be ready to go.
 
 To connect to the console of you instance:
     `vagrant ssh` 
