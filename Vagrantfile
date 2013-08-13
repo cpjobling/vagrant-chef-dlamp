@@ -36,6 +36,8 @@ Vagrant.configure("1") do |config|
 
     chef.add_recipe("vim")
     
+    chef.add_recipe("curl")
+    
     chef.roles_path = "roles"
    
     # This role represents our default Drupal development stack.
