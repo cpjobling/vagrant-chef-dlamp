@@ -35,6 +35,8 @@ Vagrant.configure("1") do |config|
     chef.cookbooks_path = ["cookbooks/site-cookbooks", "cookbooks/drupal-cookbooks"]
 
     chef.add_recipe("vim")
+   
+    chef.add_recipe("curl")
     
     chef.roles_path = "roles"
    
